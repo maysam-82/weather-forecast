@@ -16,7 +16,7 @@ const SearchBar = (props) => {
 	};
 	return (
 		<form
-			className="input-group"
+			className="input-group mt-2"
 			onSubmit={(event) => onFormSubmitHandler(event)}
 		>
 			<input
