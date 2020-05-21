@@ -6,7 +6,6 @@ export const fetchWeather = (cityName) => async (dispatch) => {
 	const response = await axios.get(
 		`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}`
 	);
-	console.log(response.data);
 	dispatch({
 		type: actionTypes.FETCH_WEATHER,
 		payload: response.data,
